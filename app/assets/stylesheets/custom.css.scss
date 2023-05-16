@@ -11,12 +11,11 @@
 :root {
   --bg-color: #222327;
   --text-color: #fff;
-  --main-color: #29fd53;
+  --main-color: #00ffad;
 }
 
 body {
   min-height: 100vh;
-  background: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -170,25 +169,41 @@ header {
 }
 
 section {
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 section:nth-child(2) {
   color: #fff;
+  background-image: linear-gradient(rgba(0, 4, 73, 0.6), rgba(0, 4, 73, 0.6)),
+    asset-url("sectionOne.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section:nth-child(3) {
+  min-height: 80vh;
   color: #222327;
   background: #fff;
 }
 
+section:nth-child(3) h2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 4.5rem;
+}
+
 section:nth-child(4) {
+  min-height: 80vh;
   color: #fff;
+  background-color: var(--main-color);
+  clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
 }
 
 section:nth-child(5) {
+  min-height: 100vh;
   color: #222327;
   background: #fff;
 }
@@ -198,25 +213,54 @@ section h1 {
 }
 
 section h2 {
-  font-size: 2.5rem;
   text-align: center;
-  text-transform: uppercase;
 }
 
-section .cards {
-  display: flex;
-}
-section .cards .text-card {
-  background: #2696e9;
-  margin: 20px;
-  padding: 20px;
+section .first-section-row {
+  margin-bottom: 50px;
 }
 
-section .cards .text-card h3 {
-  font-size: 30px;
+section .first-section-row i {
+  font-size: 5rem;
   text-align: center;
-  text-transform: uppercase;
+  justify-content: center;
   margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+section .first-section-row h3 {
+  font-size: 2.5rem;
+}
+
+section .first-section-row button {
+  font-size: 1rem;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--main-color);
+}
+
+section .second-section-row h2 {
+  color: black;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+section .second-section-row button {
+  font-size: 1rem;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  color: white;
+  border-radius: 22px;
+  background-color: black;
+}
+
+section .second-section-row p {
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 900px) {
@@ -239,4 +283,25 @@ section .cards .text-card h3 {
 .reveal.active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+#firstSection .container i {
+  position: absolute;
+  top: 12%;
+  font-size: 6rem;
+  color: var(--main-color);
+}
+
+#firstSection .container p {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+#firstSection .container button {
+  font-size: 1rem;
+  padding: 12px 30px 12px 30px;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--main-color);
 }
