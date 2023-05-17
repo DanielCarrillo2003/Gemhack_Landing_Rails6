@@ -1,44 +1,20 @@
 <section id="firstSection">
     <div class="container">
-        <i class="ri-home-heart-fill"></i>
+        <%= image_tag("gems.png", alt: "", id: "diamantes")%>
         <h1>A New Way To Start Bussiness</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sunt reiciendis illum enim cumque impedit, nostrum reprehenderit qui ut veniam.</p>
-        <button>Get Started</button>
+        <button style="margin-bottom: 50px">Get Started</button>
     </div>
 </section>
 
 <section >
-    <div class="container reveal">
-        <h2>Services</h2>
-        <div class="container text-center">
-            <div class="row first-section-row">
-                <div class="col m-5">
-                    <i class="ri-html5-line"></i>
-                    <h3>Web Apps</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="col m-5">
-                    <i class="ri-robot-line"></i>
-                    <h3>Machine Learning</h3> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="col m-5">
-                    <i class="ri-palette-line"></i>
-                    <h3>Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Learn More</button>
-                </div>
-            </div>
-        </div>
-    </div>
+       <%= render 'pages/services'%>
 </section>
 
 <section>
     <div class="container reveal">
         <div class="row second-section-row">
-            <div class="col">
+            <div class="col" id="take-look">
                 <h2>Take a look inside</h2>
                 <p>Te iisque labitur eos, nec sale argumentum scribentur no, augue disputando in vim. Erat fugit sit at, ius lorem deserunt deterruisset no.</p>
                 <button>Learn More</button>
@@ -49,45 +25,15 @@
         </div>
     </div>
 </section>
+
 <section>
-    <div class="container reveal">
-        <h2>Check our pricing</h2>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <h2>STARTUP</h2>
-                    <p> <strong>$ <span>0</span> / MO</strong> </p>
-                    <ul>
-                        <li>Up to 5 Documents</li>
-                        <li>Up to 3 reviews</li>
-                        <li>5 team Members</li>
-                        <li>Limited Support</li>
-                    </ul>
-                    <button>Get Free</button>
-                </div>
-                <div class="col">
-                    <h2>PREMIUM</h2>
-                    <p> <strong>$ <span>10</span> / MO</strong> </p>
-                    <ul>
-                        <li>Up to 5 Documents</li>
-                        <li>Up to 3 reviews</li>
-                        <li>5 team Members</li>
-                        <li>Limited Support</li>
-                    </ul>
-                    <button>Get Free</button>
-                </div>
-                <div class="col">
-                    <h3>PROFESSIONAL</h3>
-                    <p> <strong>$ <span>30</span> / MO</strong> </p>
-                    <ul>
-                        <li>Up to 5 Documents</li>
-                        <li>Up to 3 reviews</li>
-                        <li>5 team Members</li>
-                        <li>Limited Support</li>
-                    </ul>
-                    <button>Get Free</button>
-                </div>
-            </div>
-        </div>    
-    </div>
+    <%= render 'pages/pricings'%>
+</section>
+
+<section class="partners_section">
+    <%= render 'pages/brands'%>
+</section>
+
+<section>
+    <%= render 'pages/contactForm'%>
 </section>

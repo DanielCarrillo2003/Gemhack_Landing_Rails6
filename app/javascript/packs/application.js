@@ -14,14 +14,6 @@ ActiveStorage.start();
 
 import "bootstrap";
 
-const menu = document.getElementById("menu-icon");
-const navegacion = document.querySelector(".navegacion");
-
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navegacion.classList.toggle("open");
-};
-
 window.addEventListener("scroll", reveal);
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");
@@ -29,7 +21,7 @@ function reveal() {
   for (let i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight;
     let revealTop = reveals[i].getBoundingClientRect().top;
-    let revealPoint = 170;
+    let revealPoint = 150;
 
     if (revealTop < windowHeight - revealPoint) {
       reveals[i].classList.add("active");
