@@ -310,29 +310,38 @@ section .first-section-row i {
   font-size: 5rem;
   text-align: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: var(--main-color);
 }
 
 section .first-section-row h3 {
   font-size: 2.5rem;
-  margin-top: 20px;
+  margin-top: 15px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-section .first-section-row button {
-  font-size: 1rem;
-  padding: 12px 30px 12px 30px;
+section .first-section-row p {
   margin-top: 20px;
-  border: none;
-  border-radius: 22px;
-  background-color: var(--main-color);
-  transition: all 0.5s ease;
+  height: 140px;
 }
 
-section .first-section-row button:hover {
-  margin-top: 10px;
-  color: white;
-}
+// section .first-section-row button {
+//   font-size: 1rem;
+//   padding: 12px 30px 12px 30px;
+//   margin-top: 20px;
+//   border: none;
+//   border-radius: 22px;
+//   background-color: var(--main-color);
+//   transition: all 0.5s ease;
+// }
+
+// section .first-section-row button:hover {
+//   margin-top: 10px;
+//   color: white;
+// }
 
 section .second-section-row h2 {
   color: black;
