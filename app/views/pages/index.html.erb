@@ -3,11 +3,11 @@
         <%= image_tag("gems.png", alt: "", id: "diamantes")%>
         <h1>Web Development, Data Science and Business Consulting</h1>
         <p>Boosting your business with technology and data analysis!</p>
-        <button style="margin-bottom: 50px">Get Started</button>
+        <a href="https://calendly.com/gemhack/30min"> <button style="margin-bottom: 50px" id="getStarted">Get Started</button> </a>
     </div>
 </section>
 
-<section >
+<section id="secondSection">
        <%= render 'pages/services'%>
 </section>
 
@@ -26,7 +26,7 @@
     </div>
 </section>
 
-<section>
+<section id="fourthSection">
     <%= render 'pages/pricings'%>
 </section>
 
@@ -34,6 +34,6 @@
     <%= render 'pages/brands'%>
 </section>
 
-<section>
+<section id="sixthSection">
     <%= render 'pages/contactForm'%>
 </section>

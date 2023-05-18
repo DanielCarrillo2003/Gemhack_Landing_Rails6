@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -24,6 +25,7 @@ body {
 html {
   overflow-x: hidden;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 //navegacion
@@ -38,9 +40,7 @@ ul {
 }
 
 header {
-  position: fixed;
   width: 100%;
-  top: 0;
   right: 0;
   z-index: 1000;
 }
@@ -52,6 +52,11 @@ header {
 //nav two
 nav {
   background-color: var(--bg-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 nav:after {
@@ -67,10 +72,11 @@ nav .logo {
   font-weight: 600;
   line-height: 70px;
   padding-left: 60px;
+  padding-top: 2px;
 }
 
 nav .logo img {
-  width: 250px;
+  width: 200px;
 }
 
 nav ul {
@@ -160,7 +166,7 @@ input {
 
   nav .logo {
     padding-left: 30px;
-    width: 100%;
+    width: 80%;
   }
 
   nav ul li,
@@ -239,6 +245,7 @@ section {
   align-items: center;
 }
 section:nth-child(2) {
+  margin-top: 50px;
   color: #fff;
   background-image: linear-gradient(
       rgba(25, 36, 64, 0.8),
@@ -259,11 +266,11 @@ section:nth-child(3) {
 section:nth-child(3) h2 {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-size: 4.5rem;
+  font-size: 3.6rem;
 }
 
 section:nth-child(4) {
-  min-height: 80vh;
+  height: 80vh;
   color: #fff;
   background-color: var(--main-color);
   clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
@@ -295,7 +302,7 @@ section:nth-child(7) {
 }
 
 section h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 section h2 {
@@ -358,20 +365,26 @@ section .second-section-row button {
   color: white;
   border-radius: 22px;
   background-color: black;
+  position: relative;
+  top: 10px;
+  transition: all 0.3s ease;
+}
+section .second-section-row button:hover {
+  top: 5px;
 }
 
 section .second-section-row p {
   color: black;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 900px) {
   section:nth-child(4) {
-    min-height: 85vh;
+    height: 85vh !important;
     color: #fff;
     background-color: var(--main-color);
-    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   }
 
   #take-look {
@@ -388,16 +401,17 @@ section .second-section-row p {
   .contact {
     padding-left: 30px !important;
     padding-right: 30px !important;
+    width: 85%;
   }
 
   section:nth-child(3) h2 {
-    font-size: 4rem;
+    font-size: 3.6rem;
     margin-top: 75px;
     margin-bottom: 65px;
   }
 
   section:nth-child(5) h2 {
-    font-size: 4rem !important;
+    font-size: 3.6rem !important;
     margin-top: 75px !important;
     margin-bottom: 65px !important;
   }
@@ -452,15 +466,22 @@ section .second-section-row p {
 #firstSection .container p {
   font-size: 2rem;
   font-weight: 100;
-  margin-bottom: 50px;
 }
 
 #firstSection .container button {
+  position: relative;
   font-size: 1rem;
   padding: 12px 30px 12px 30px;
   border: none;
   border-radius: 22px;
   background-color: var(--main-color);
+  top: 10px;
+  transition: all 0.3s ease;
+}
+
+#firstSection .container button:hover {
+  top: 5px;
+  color: white;
 }
 
 #middleCol {
@@ -468,7 +489,7 @@ section .second-section-row p {
   color: white;
 }
 .pricings div {
-  padding: 50px 40px !important;
+  padding: 35px 40px !important;
   margin: 25px;
 }
 .pricings {
@@ -477,39 +498,54 @@ section .second-section-row p {
 
 .pricings div ul li {
   margin-top: 20px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 300;
+  line-height: 15px;
 }
 
-.pricings h2 {
-  margin-bottom: 25px;
+.pricings h3 {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #priceOne {
-  font-size: 6em !important;
+  font-size: 4em !important;
 }
 
 #priceTwo {
-  font-size: 6em !important;
+  font-size: 4em !important;
 }
 
 #priceThree {
-  font-size: 6em !important;
+  font-size: 4em !important;
 }
 
 section:nth-child(5) h2 {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  font-size: 4.5rem;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 3.6rem;
 }
 
 .pricings button {
   font-size: 1rem;
-  margin-top: 50px;
+  position: relative;
+  top: 40px;
   padding: 12px 30px 12px 30px;
   border: none;
   border-radius: 22px;
   background-color: var(--main-color);
+  transition: all 0.3s ease;
+  margin-bottom: 50px;
+}
+
+a {
+  cursor: pointer !important;
+}
+.pricings button:hover {
+  top: 35px;
+  color: white;
 }
 
 //slider
@@ -595,7 +631,7 @@ form div .btn:hover {
 }
 
 .contact h2 {
-  font-size: 3.4rem;
+  font-size: 3.6rem;
   font-weight: 600;
   margin-bottom: 25px;
   margin-top: 50px;
@@ -616,5 +652,29 @@ form div .btn:hover {
 }
 
 footer {
-  background-color: rgb(25, 36, 64);
+  background-color: var(--bg-color);
+}
+
+footer #imageFooter {
+  width: 200px;
+}
+
+footer p i {
+  font-size: 1rem;
+  margin: 5px;
+  color: var(--bg-color);
+}
+
+footer p i.fa-facebook-f {
+  font-size: 1.1rem;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+footer p span {
+  width: 50px !important;
+  padding: 5px;
+  border-radius: 22px;
+  margin: 5px;
+  background-color: #fff;
 }

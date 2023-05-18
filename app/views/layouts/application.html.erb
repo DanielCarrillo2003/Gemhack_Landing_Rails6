@@ -8,7 +8,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -26,11 +26,12 @@
 
     <%= yield %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <footer class="py-5">
+    <footer class="py-4">
       <%=render 'layouts/footer'%>
     </footer>
-
+    
+    <%= javascript_pack_tag 'custom' %>
+   
   </body>
 </html>

@@ -1,5 +1,6 @@
 <nav>
-    <div class="logo"> <%= image_tag("gemhackWhiteLogo.png", alt: "")%> </div>
+    <a href="/"><div class="logo"> <%= image_tag("gemhackWhiteLogo.png", alt: "")%> </div> </a>
+    
     <label for="btn" class="icon">
         <i class="ri-bar-chart-horizontal-line"></i>
     </label>
@@ -7,15 +8,15 @@
     <ul>
         <li>
             <label for="btn-1" class="show">Services +</label>
-            <a href="#">Services</a> 
+            <a href="">Services</a> 
             <input type="checkbox" id="btn-1">
             <ul>
-                <li><a href="#">Web Dev</a></li>
-                <li><a href="#">Data Science</a></li>
-                <li><a href="#">Business</a></li>
+                <li><a class="linkNav" data-link="secondSection">Web Dev</a></li>
+                <li><a class="linkNav" data-link="secondSection">Data Science</a></li>
+                <li><a class="linkNav" data-link="secondSection">Business</a></li>
             </ul>   
         </li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a class="linkNav" data-link="sixthSection">Contact</a></li>
     </ul>
 </nav>
