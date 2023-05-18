@@ -38,6 +38,8 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  config.hosts << "53fe-187-214-217-155.ngrok-free.app"
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 

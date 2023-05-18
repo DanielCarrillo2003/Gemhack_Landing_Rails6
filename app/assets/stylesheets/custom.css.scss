@@ -257,8 +257,8 @@ section:nth-child(3) {
 }
 
 section:nth-child(3) h2 {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 4.5rem;
 }
 
@@ -316,14 +316,22 @@ section .first-section-row i {
 
 section .first-section-row h3 {
   font-size: 2.5rem;
+  margin-top: 20px;
 }
 
 section .first-section-row button {
   font-size: 1rem;
   padding: 12px 30px 12px 30px;
+  margin-top: 20px;
   border: none;
   border-radius: 22px;
   background-color: var(--main-color);
+  transition: all 0.5s ease;
+}
+
+section .first-section-row button:hover {
+  margin-top: 10px;
+  color: white;
 }
 
 section .second-section-row h2 {
@@ -399,11 +407,13 @@ section .second-section-row p {
     font-weight: 100;
 
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   #firstSection .container button {
+    margin-top: 25px;
     margin-bottom: 50px;
+    transition: all 0.5s ease;
   }
 
   section .cards {
