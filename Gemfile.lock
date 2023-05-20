@@ -119,6 +119,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.0-x64-mingw32)
       racc (~> 1.4)
+    pg (1.5.3-x64-mingw32)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -180,7 +181,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.2-x64-mingw32)
+    sqlite3 (1.6.3-x64-mingw32)
     thor (1.2.2)
     tilt (2.1.0)
     timeout (0.3.2)
@@ -222,6 +223,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   delayed_job_active_record
   jbuilder (~> 2.7)
+  pg
   puma (~> 5.0)
   rails (~> 6.1.4)
   sass-rails (>= 6)
