@@ -9,24 +9,23 @@
       <p>Address 2: Leandro valle #278nte col centro CP 27000, Torreón Coahuila</p>
     </div>
     <div class="col text-start col-sm-12 col-xs-12 col-md-12 col-lg-6" style="margin-top: 50px;" >
-      <form class="row g-3">
+      <%= form_with(model: @correo, url: correo_path, method: :post, class: "row g-3", local: true) do |f| %>
         <div class="col-md-6">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control transparent-input" id="name">
+            <%= f.label :name, class: "form-label", for: "name"%>
+            <%= f.text_field :name, class: "form-control transparent-input", id: "name" %>
         </div>
         <div class="col-md-6">
-            <label for="email" class="form-label">Your email</label>
-            <input type="email" class="form-control transparent-input" id="email">
+            <%= f.label :email, class: "form-label", for: "email"%>
+            <%= f.email_field :email, class: "form-control transparent-input", id: 'email' %>
         </div>
         <div class=" col-12">
-            <label for="floatingTextarea2" class="form-label">Comments</label>
-            <textarea class="form-control transparent-input" id="floatingTextarea2" style="height: 180px"></textarea>
+            <%= f.label :message, class: "form-label", for: 'message'%>
+            <%= f.text_area :message, rows: 5, class: "form-control transparent-input", id: 'message'%>
         </div>
-      
         <div class="col-12">
-            <button type="submit" class="btn">Submit</button>
+            <%= f.button "Send message", class: "btn", id: "sendButton"%>
         </div>
-      </form>
+      <% end %>
     </div>
   </div>
 </div>

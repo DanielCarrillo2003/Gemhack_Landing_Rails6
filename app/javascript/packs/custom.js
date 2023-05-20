@@ -23,3 +23,12 @@ links.forEach((item) => {
     el.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+const boton = document.getElementById("sendButton");
+const nameField = document.getElementById("name");
+const emailField = document.getElementById("email");
+const messageField = document.getElementById("message");
+
+boton.addEventListener("click", function () {
+  console.log("I was clicked");
+});

@@ -79,6 +79,11 @@ GEM
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
+    delayed_job (4.1.11)
+      activesupport (>= 3.0, < 8.0)
+    delayed_job_active_record (4.1.7)
+      activerecord (>= 3.0, < 8.0)
+      delayed_job (>= 3.0, < 5)
     erubi (1.12.0)
     ffi (1.15.5-x64-mingw32)
     globalid (1.1.0)
@@ -215,6 +220,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  delayed_job_active_record
   jbuilder (~> 2.7)
   puma (~> 5.0)
   rails (~> 6.1.4)
