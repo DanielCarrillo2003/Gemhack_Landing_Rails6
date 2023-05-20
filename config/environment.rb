@@ -7,7 +7,7 @@ Rails.application.initialize!
 ActionMailer::Base.smtp_settings = {
     user_name: 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
     password: ENV['SENDGRID_API_KEY'],
-    domain: 'gemhack.herokuapp.com',
+    domain: 'daniel_carrillo_2003@outlook.com',
     address: 'smtp.sendgrid.net',
     port: 587,
     authentication: :plain,
