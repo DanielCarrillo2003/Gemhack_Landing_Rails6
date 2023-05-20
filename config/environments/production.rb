@@ -55,6 +55,16 @@ Rails.application.configure do
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
 
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.sendgrid.net',
+    port: 587,
+    domain: 'gemhack.herokuapp.com',
+    user_name: 'apikey',
+    password: Rails.application.credentials.dig(:sendgrid, :api_key),
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
+
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
