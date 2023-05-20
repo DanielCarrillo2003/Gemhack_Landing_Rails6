@@ -60,7 +60,7 @@ Rails.application.configure do
     port: 587,
     domain: 'gemhack.herokuapp.com',
     user_name: 'apikey',
-    password: Rails.application.credentials.dig(:sendgrid, :api_key),
+    password: ENV['SENDGRID_API_KEY'],
     authentication: :plain,
     enable_starttls_auto: true
   }
